@@ -105,7 +105,7 @@ gulp.task('browser-sync', ['nodemon'], function() {
     bs.init(files,{
         proxy: config.default.PORT?"http://localhost:"+config.default.PORT:"http://localhost:3000",
         browser: "chrome",
-        port: 80
+        port: 3300
     });
 });
 //监听静态资源变化，热更新
